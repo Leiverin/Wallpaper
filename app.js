@@ -5,7 +5,7 @@ import { engine } from 'express-handlebars';
 import router from './src/router/index.js';
 
 const app = express();
-const port = 4000;
+const port = process.env.PORT || 4000;
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
