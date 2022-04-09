@@ -1,1 +1,37 @@
-<h1>Home page</h1>
+<div class="grid wrapper">
+     <div class="row"> 
+          {{#each docs}}
+               <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 item-content">
+                    <div class="card card-box" style="width: 90%; overflow: hidden">
+                         <a href="/detail/{{_id}}">
+                              <div class="wrapper-img">
+                                   <img src="{{link}}" class="card-img-top" alt="Image not found">
+                                   <div class="curtain card-img-top">
+                                        <i class="fa-solid fa-image icon-image"></i>
+                                   </div>
+                              </div>
+                         </a>
+                         <div class="card-body">
+                              <a href="/detail/{{_id}}">
+                                   <h3 class="card-text">{{title}}</h3>
+                              </a>
+                              <p class="card-text">{{content}}</p>
+                         </div>
+                    </div>
+               </div>
+          {{/each}}
+     </div>
+     <div class="btn-box">
+          <a id="load-more" type="submit" class="btn-load-more">Load more ...</a>
+     </div>
+</div>
+{{!-- 
+<script>
+     const loadmore = document.getElementById("load-more");
+     var timeRender = 6;
+     console.log(timeRender);
+     loadmore.onclick =()=>{
+          timeRender += 6;
+          loadmore.href = "/?start="+timeRender;
+     }
+</script> --}}

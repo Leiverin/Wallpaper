@@ -1,0 +1,302 @@
+<nav class="breadcrumb-decord" aria-label="breadcrumb">
+  <ol class="breadcrumb" id="brdcrb">
+    <li class="breadcrumb-item" ><a href="/">Home</a></li>
+    <li class="breadcrumb-item" aria-current="page">detail</li>
+  </ol>
+</nav>
+{{#if item}}
+     <section class="grid">
+          <div class="row">
+               <section class="header-infor">
+                    <h1 class="post-title">{{title}}</h1>
+                    <div class="post-header">
+                         <div class="post-header-line">
+                              <span class="post-text">
+                                   <i class="fa-solid fa-share-nodes"></i>
+                                   <span>
+                                        share
+                                   </span>
+                              </span>
+                              <ul class="icon-infor">
+                                   <li class="icon">
+                                        <div class="detail-icon fb-box">
+                                             <a href="">
+                                                  Facebook
+                                             </a>
+                                        </div>
+                                        <a class="infor-fb" href="">
+                                             <i class="fa-brands fa-facebook"></i>
+                                        </a>
+                                   </li>
+                                   <li class="icon">
+                                        <div class="detail-icon  twitter-box">
+                                             <a href="">
+                                                  Twitter
+                                             </a>
+                                        </div>
+                                        <a class="infor-twitter" href="">
+                                             <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                   </li>
+                                   <li class="icon">
+                                        <div class="detail-icon  pinterest-box">
+                                             <a href="">
+                                                  Pinterest
+                                             </a>
+                                        </div>
+                                        <a class="infor-pinterest" href="">
+                                             <i class="fa-brands fa-pinterest-square"></i>
+                                        </a>
+                                   </li>
+                                   <li class="icon">
+                                        <div class="detail-icon  mail-box">
+                                             <a href="">
+                                                  Mail
+                                             </a>
+                                        </div>
+                                        <a class="infor-mail" href="">
+                                             <i class="fa-solid fa-envelope"></i>
+                                        </a>
+                                   </li>
+                              </ul>
+                         </div>
+                    </div>
+                    <div class="post-author">
+                         <span class="post-text">
+                              <i class="fa-solid fa-user"></i>
+                              <span>by 
+                                   <a href="">
+                                        vanhungph18197
+                                   </a>
+                              </span>
+                         </span>
+                         <span class="post-text post-time">
+                              <i class="fa-solid fa-clock"></i>
+                              <span>post at {{item.createdAt}}
+                              </span>
+                         </span>
+                    </div>
+               </section>
+               <article class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 col-xxl-9 post-content">
+                    
+                    <div class="post-main">
+                         <h2>
+                              {{title}}
+                         </h2>
+                         <div class="post-sub-content">
+                              <p>
+                                   {{item.content}}
+                              </p>
+                         </div>
+                         <div class="post-image">
+                              <a href="{{item.link}}">
+                                   <img src="{{item.link}}" alt="Image not found">
+                              </a>
+                              <span>{{title}}</span>
+                              <a href="#">Download</a>
+                         </div>
+                    </div>
+                    <div class="post-footer">
+                         <div class="post-footer-line">
+                              <i class="fa-solid fa-comment-dots"></i>
+                              <span>2 comment</span>
+                         </div>
+                         <div class="post-footer-line">
+                              <i class="fa-solid fa-tag"></i>
+                              <span>Label
+                                   <a href="/">#Hình nền động</a>
+                                   <a href="/">#Ngầu</a>
+                              </span>
+                         </div>
+                    </div>
+                    <div class="post-comments">
+                         <div class="post-comments-title">
+                              <i class="fa-solid fa-comment"></i>
+                              <h2>COMMENTS</h2>
+                         </div>
+                         <div class="post-comments-content">
+                              <div class="post-comments-holder">
+                                   <ul>
+                                        <li class="post-comment-wrapper">
+                                             <img class="comment-avatar" src="{{item.link}}" height="70px" width="70px" alt="">
+                                             <div class="comment-main">
+                                                  <div class="comment-title">
+                                                       <cite class="username">Anonymous</cite>
+                                                       <p class="date-comment">22-2-2022</p>
+                                                  </div>
+                                                  <div class="comment-content">
+                                                       abc
+                                                  </div>                                        
+                                             </div>
+                                             <div class="icon-reply">
+                                                  <i class="fa-solid fa-reply"></i>
+                                                  <span>REPLY</span>
+                                             </div>
+                                        </li>
+                                   </ul>
+                                   
+                              </div>
+                         </div>
+                    </div>
+               </article>
+               <aside class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 sidebar">
+                    <div class="search-range">
+                         <h3 class="sidebar-title" >Search This Blog</h3>
+                         <div class="search-form">
+                              <input type="text" class="form-control input-decord" placeholder="Search..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                              <button class="btn-decord">
+                                   <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                              </button>
+                         </div>
+                    </div>
+
+                    <div class="line-space">
+                    </div>
+
+                    <div class="label-range">
+                         <h3 class="sidebar-title">Labels</h3>
+                         <div class="label-content">
+                              <div class="btn-box">
+                                   <a class="btn-label" href="/">HÌNH NỀN ĐỘNG _468</a>
+                                   <div class="mt-3">
+                                        <a class="btn-label" href="/">ANIME _218</a>
+                                        <a class="btn-label m-lg-3" href="/">AR72014 _1</a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="line-space">
+                    </div>
+
+                    <div class="popolar-posts">
+                         <h3 class="sidebar-title">Popular Posts</h3>
+                         <div class="popolar-posts-wrapper">
+                              <ul class="popolar-posts-list">
+                                   <li class="popolar-posts-item">
+                                        <div class="popolar-item-image">
+                                            <a href="/">
+                                                  <img src="https://1.bp.blogspot.com/-v7YbJc6lYk4/YUr8GaNpp_I/AAAAAAABOI8/_YXcAbxi5ScznW1hYAtjg1AqWajMUJPgwCLcBGAsYHQ/w72-h72-p-k-no-nu/spirited%2Baway%2Blive%2Bwallpaper.gif" alt="">
+                                             </a>
+                                             <div class="curtain-popular card-img-top">
+                                                  <i class="fa-solid fa-image icon-post-image"></i>
+                                             </div>
+                                        </div>
+                                        <div class="popolar-item-title">
+                                             <a href="">Hình nền động Vùng đất linh hồn</a>
+                                        </div>
+                                   </li>
+                                   <li class="popolar-posts-item">
+                                        <div class="popolar-item-image">
+                                            <a href="/">
+                                                  <img src="https://1.bp.blogspot.com/-JlQyUneKD6g/YPKuJ8EjEMI/AAAAAAABNzI/64LN1SDXzBwwvFm4ZZcLwkcFJ8qSFBw1ACLcBGAsYHQ/w72-h72-p-k-no-nu/Cool%2Blive%2Bwallpaper.gif" alt="">
+                                             </a>
+                                             <div class="curtain-popular card-img-top">
+                                                  <i class="fa-solid fa-image icon-post-image"></i>
+                                             </div>
+                                        </div>
+                                        <div class="popolar-item-title">
+                                             <a href="">Hình nền động siêu ngầu</a>
+                                        </div>
+                                   </li>
+                                   <li class="popolar-posts-item">
+                                        <div class="popolar-item-image">
+                                            <a href="/">
+                                                  <img class="" src="https://blogger.googleusercontent.com/img/a/AVvXsEhzDkC_cnjxVNfZ1jbMiWc110vhtAqBuuqin2bSSAeDSE6BtC3x__jfK5I11wtIGFWzYDf8XpSRjXU9w283TREMgfE4KlRa9nugv-IlS__73zF25txonDZLx8J-WoUbnjeehHONcd5znD4Z81Elywybly71Sap9MtGDq5TdYOuWnla1u3TjWGpmqQVG=w72-h72-p-k-no-nu" alt="">
+                                             </a>
+                                             <div class="curtain-popular card-img-top">
+                                                  <i class="fa-solid fa-image icon-post-image"></i>
+                                             </div>
+                                        </div>
+                                        <div class="popolar-item-title">
+                                             <a href="">Hình nền động chill giữa khung cảnh yên bình</a>
+                                        </div>
+                                   </li>
+                                   <li class="popolar-posts-item">
+                                        <div class="popolar-item-image">
+                                            <a href="/">
+                                                  <img src="https://1.bp.blogspot.com/-xqV80lRrd3g/YGxMru1k4KI/AAAAAAABNLY/ZqoEXuxCpSgxXRYbGe25WA02hCmKI602wCLcBGAsYHQ/w72-h72-p-k-no-nu/Sad%2Blive%2Bwallpaper.gif" alt="">
+                                             </a>
+                                             <div class="curtain-popular card-img-top">
+                                                  <i class="fa-solid fa-image icon-post-image"></i>
+                                             </div>
+                                        </div>
+                                        <div class="popolar-item-title">
+                                             <a href="">Hình nền động một ngày buồn bã</a>
+                                        </div>
+                                   </li>
+                                   <li class="popolar-posts-item">
+                                        <div class="popolar-item-image">
+                                            <a href="/">
+                                                  <img src="https://1.bp.blogspot.com/-665K3RV-U7o/X-fl_CTULUI/AAAAAAABMkE/QB5EF594HvsFvRlURFTnTcUMxusk7pHXQCLcBGAsYHQ/w72-h72-p-k-no-nu/Naruto%2BLive%2Bwallpaper.gif" alt="">
+                                             </a>
+                                             <div class="curtain-popular card-img-top">
+                                                  <i class="fa-solid fa-image icon-post-image"></i>
+                                             </div>
+                                        </div>
+                                        <div class="popolar-item-title">
+                                             <a href="">Hình nền động Naruto</a>
+                                        </div>
+                                   </li>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="line-space">
+                    </div>
+
+                    <div class="label-range">
+                         <h3 class="sidebar-title">Edit</h3>
+                         <div class="label-content mt-4">
+                              <div class="btn-box">
+                                   <div class="mt-3">
+                                        <a class="btn-label" href="/detail/{{item._id}}/update">Update</a>
+                                        <a class="btn-label m-lg-2" href="" data-bs-toggle="modal" data-bs-id="{{item._id}}" data-bs-target="#deleteModal">Delete</a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </aside>
+          </div>
+     </section>
+{{/if}}
+
+{{!-- Model Delete --}}
+
+<!-- Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Thông báo !</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Bạn muốn xóa thông tin ảnh nền này không?
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="btn-delete" class="btn btn-danger">Có</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Không</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{!-- Hidden form delete --}}
+<form name="form-delete" type="hidden" method="POST">
+
+</form>
+
+<script>
+     const deleteModal = document.getElementById('deleteModal');
+     const formDelete = document.forms['form-delete'];
+     deleteModal.addEventListener('show.bs.modal', function (event) {
+          const button = event.relatedTarget;
+          const id = button.getAttribute('data-bs-id');
+          const btnDelete = document.getElementById('btn-delete');
+          btnDelete.onclick =()=>{
+               formDelete.action = '/detail/'+id+'?_method=DELETE';
+               formDelete.submit();
+          }
+     })
+</script>
