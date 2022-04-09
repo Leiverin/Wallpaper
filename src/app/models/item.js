@@ -9,4 +9,4 @@ const item = new Schema({
      timestamps: true,
 })
 
-export default mongoose.model('wallpaper', item);
+export default mongoose.model('Wallpapers', item);
