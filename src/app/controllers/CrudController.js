@@ -9,15 +9,9 @@ class CrudController{
      // [POST] /create
      createResult(req, res, next){
           const formData = req.body;
-          if(formData.title == ""){
-               res.render('create', {
-                    title: 'Create',
-                    message: 'Successfully added '+formData.title
-               });
-          }
           const item = Item(formData);
           item.save();
-          
+          res.render('create', {title: 'Create', message: 'Successfully added '+formData.title, error: ''});
      }
 
      // [GET] /detail/:id/edit
