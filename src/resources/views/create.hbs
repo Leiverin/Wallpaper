@@ -4,28 +4,21 @@
     <li class="breadcrumb-item" aria-current="true">create</li>
   </ol>
 </nav>
-<div class="form-create">
+<div class="form-create pb-5">
      <form method="POST" class="form-border needs-validation" action="/create">
           <div class="mb-3">
                <label for="title" class="form-label">Title: </label>
-               <input name="title" type="text" class="form-control is-invalid" id="title" area-describedby="titleFeedback" placeholder="Enter tittle" required="true">
-               <div id="titleFeedback" class="invalid-feedback">
-                    Please fill this field.
-               </div>
+               <input name="title" type="text" class="form-control" id="title" area-describedby="titleFeedback" placeholder="Enter tittle" required="true">
           </div>
           <div class="mb-3">
                <label for="content" class="form-label">Content: </label>
-               <input name="content" type="text" class="form-control is-invalid" id="content" area-describedby="contentFeedback" placeholder="Enter content" required="true">
-               <div id="contentFeedback" class="invalid-feedback">
-                    Please fill this field.
-               </div>
+               <input name="content" type="text" class="form-control" id="content" area-describedby="contentFeedback" placeholder="Enter content" required="true">
+               
           </div>
           <div class="mb-3">
                <label for="link" class="form-label">Link image: </label>
-               <input name="link" type="text" class="form-control is-invalid" id="link" area-describedby="linkFeedback" placeholder="Enter link image" required="true">
-               <div id="linkFeedback" class="invalid-feedback">
-                    Please fill this field.
-               </div>
+               <input name="link" type="text" class="form-control" id="link" area-describedby="linkFeedback" placeholder="Enter link image" required="true">
+               
           </div>
           <div class="btn-add">
                <button type="submit" class="btn-dark btn">ADD</button>
@@ -33,5 +26,3 @@
           <p class="text">{{message}}</p>
      </form>
 </div>
-
-<input type="hidden" id="page" value="{{page}}"></input>

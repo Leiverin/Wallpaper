@@ -11,21 +11,17 @@
           <form method="POST" class="form-border needs-validation" action="/detail/{{item._id}}?_method=PUT">
                <div class="mb-3">
                     <label for="title" class="form-label">Title: </label>
-                    <input name="title" type="text" class="form-control is-valid" value="{{item.title}}" id="title" area-describedby="titleFeedback" placeholder="Enter tittle" required="true">
-                    <div id="titleFeedback" class="invalid-feedback">
-                         Please fill this field.
-                    </div>
+                    <input name="title" type="text" class="form-control" value="{{item.title}}" id="title" area-describedby="titleFeedback" placeholder="Enter tittle" required="true">
+  
                </div>
                <div class="mb-3">
                     <label for="content" class="form-label">Content: </label>
-                    <input name="content" type="text" class="form-control is-valid" value="{{item.content}}" id="content" area-describedby="contentFeedback" placeholder="Enter content" required="true">
-                    <div id="contentFeedback" class="invalid-feedback">
-                         Please fill this field.
-                    </div>
+                    <input name="content" type="text" class="form-control" value="{{item.content}}" id="content" area-describedby="contentFeedback" placeholder="Enter content" required="true">
+
                </div>
                <div class="mb-3">
                     <label for="link" class="form-label">Link image: </label>
-                    <input name="link" type="text" class="form-control is-valid" value="{{item.link}}" id="link" area-describedby="linkFeedback" placeholder="Enter link image" required="true">
+                    <input name="link" type="text" class="form-control" value="{{item.link}}" id="link" area-describedby="linkFeedback" placeholder="Enter link image" required="true">
                     <div id="linkFeedback" class="invalid-feedback">
                          Please fill this field.
                     </div>
@@ -33,7 +29,6 @@
                <div class="btn-add">
                     <button type="submit" class="btn-dark btn">ADD</button>
                </div>
-               <p class="text">{{message}}</p>
           </form>
      </div>
 

@@ -6,7 +6,6 @@ class WebAPIController{
           res.header('Access-Control-Allow-Methods', 'GET');
           Item.find({})
           .then(response=>{
-               
                res.send(HandleMongoose.handleWithMultipleObjects(response));
           })
           .catch(next);

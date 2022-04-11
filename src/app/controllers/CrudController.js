@@ -9,9 +9,15 @@ class CrudController{
      // [POST] /create
      createResult(req, res, next){
           const formData = req.body;
+          if(formData.title == ""){
+               res.render('create', {
+                    title: 'Create',
+                    message: 'Successfully added '+formData.title
+               });
+          }
           const item = Item(formData);
           item.save();
-          res.render('create', {title: 'Create', message: 'Successfully added '+formData.title});
+          
      }
 
      // [GET] /detail/:id/edit
@@ -28,7 +34,6 @@ class CrudController{
 
      // [PUT] /detail/:id?_method=PUT
      updated(req, res, next){
-          console.log(req.params.id);
           Item.updateOne({_id: req.params.id}, req.body)
           .then(()=>{
                res.redirect('/detail/' + req.params.id)
